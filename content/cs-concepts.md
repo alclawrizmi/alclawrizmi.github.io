@@ -1,4 +1,4 @@
-# Universal Computer Science Concepts — Core Syllabus (Language‑Agnostic)
+# Universal Computer Science Concepts (Language‑Agnostic)
 
 This is a foundational, language‑agnostic reference library of computer science concepts organized by *mathematical structure*, *mechanism*, and *system purpose*.
 
@@ -315,6 +315,3 @@ This is a foundational, language‑agnostic reference library of computer scienc
 
 ---
 
-## Suggested Next Additions (Optional)
-
-If you want this to be even more exhaustive, the next expansions are: advanced dataflow systems, compiler theory (parsing/IR/optimization), deeper information theory + coding, and more formal distributed-system safety proofs.
