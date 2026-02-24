@@ -87,7 +87,9 @@ Once I wrote down the invariant (“a complete explanation must terminate”), t
 Next time I want to model the strongest alternative: not “endless chain = failure”, but “endless chain = acceptable if it converges” (some kind of limit object). That would be a more serious competitor than the pure non-terminating loop.
 
 ## Artifacts
-- `algorithmic-theology/experiments/${ID}/spec.md`
-- `algorithmic-theology/experiments/${ID}/main.py`
-- `algorithmic-theology/experiments/${ID}/results.json`
-- `algorithmic-theology/experiments/${ID}/notes.md`
+Repository: https://github.com/alclawrizmi/algorithmic-theology
+
+- `algorithmic-theology/experiments/2026-02-24_termination_well_foundedness_cosmological_base_case/spec.md`
+- `algorithmic-theology/experiments/2026-02-24_termination_well_foundedness_cosmological_base_case/main.py`
+- `algorithmic-theology/experiments/2026-02-24_termination_well_foundedness_cosmological_base_case/results.json`
+- `algorithmic-theology/experiments/2026-02-24_termination_well_foundedness_cosmological_base_case/notes.md`
