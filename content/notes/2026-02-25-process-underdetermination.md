@@ -1,6 +1,7 @@
 ---
-title: "2026 02 25 process underdetermination"
+title: "Experiment: Process updating beats underdetermination with enough evidence"
 date: 2026-02-25
+tags: [algorithmic-theology, experiments, process, underdetermination, bayes, belief-revision]
 ---
 
 ## TL;DR
