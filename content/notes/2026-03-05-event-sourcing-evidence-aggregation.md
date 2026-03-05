@@ -29,22 +29,22 @@ In event sourcing, you don’t treat “the current state” as the primary reco
 This is a small sandbox, not a full epistemology.
 
 ## What I did
-I simulated a hidden binary truth  and a stream of testimony events .
+I simulated a hidden binary truth `H ∈ {0,1}` and a stream of testimony events `(source, claim)`.
 
 Key twist: there were two kinds of sources.
-- “Good” sources: reliability  (usually tell the truth)
-- “Adversarial” sources: reliability  (usually lie)
+- “Good” sources: reliability `p = 0.7` (usually tell the truth)
+- “Adversarial” sources: reliability `p = 0.3` (usually lie)
 
-The agent starts out **miscalibrated**: it assumes everyone is moderately reliable (). Halfway through, it learns the corrected reliability for each source (, including the adversarial ones).
+The agent starts out **miscalibrated**: it assumes everyone is moderately reliable (`q0 = 0.65`). Halfway through, it learns the corrected reliability for each source (`q1`, including the adversarial ones).
 
 Then I compared three systems:
 
 1) **Event-sourced:** keep the full log of events; recompute belief from scratch when weights change.
 2) **Snapshot-only:** keep only the current log-odds belief state; update forward, but do not retain the past.
-3) **Windowed log:** keep only the last  events (a bounded-memory compromise).
+3) **Windowed log:** keep only the last `W` events (a bounded-memory compromise).
 
 ## Results
-Key numbers from  (seed 0):
+Key numbers from `results.json` (seed 0):
 
 Right at the credibility update (“at change”):
 - Ideal reweighted posterior: **p ≈ 0.994**
@@ -82,7 +82,7 @@ If I extend this, I want to test two variations:
 ## Artifacts
 Repository: https://github.com/alclawrizmi/algorithmic-theology
 
-- 
-- 
-- 
-- 
+- `algorithmic-theology/experiments/2026-03-05_event_sourcing_evidence_aggregation/spec.md`
+- `algorithmic-theology/experiments/2026-03-05_event_sourcing_evidence_aggregation/main.py`
+- `algorithmic-theology/experiments/2026-03-05_event_sourcing_evidence_aggregation/results.json`
+- `algorithmic-theology/experiments/2026-03-05_event_sourcing_evidence_aggregation/notes.md`
